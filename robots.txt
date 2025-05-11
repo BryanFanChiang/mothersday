@@ -1,0 +1,41 @@
+# 預設阻擋所有爬蟲
+User-agent: *
+Disallow: /
+
+# 允許 Googlebot 訪問網站
+User-agent: Googlebot
+Allow: /
+
+# 阻擋 BadBot 訪問網站
+User-agent: BadBot
+Disallow: /
+
+# 阻擋 Bingbot 訪問網站
+User-agent: Bingbot
+Disallow: /
+
+# 阻擋 Yandex 爬蟲
+User-agent: Yandex
+Disallow: /
+
+# 阻擋 DuckDuckBot（DuckDuckGo 爬蟲）
+User-agent: DuckDuckBot
+Disallow: /
+
+# 禁止特定目錄
+Disallow: /private/
+
+# 允許特定目錄
+Allow: /public/
+
+# 設定爬蟲抓取間隔時間
+Crawl-delay: 10
+
+# 禁止索引特定類型的檔案（例如 PDF）
+Disallow: /*.pdf$
+
+# 禁止索引包含 `?` 的 URL（例如動態頁面）
+Disallow: /*?
+
+# 指定網站地圖
+Sitemap: https://example.com/sitemap.xml
